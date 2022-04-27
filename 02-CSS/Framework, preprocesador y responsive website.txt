@@ -1,0 +1,8 @@
+Framework = Es un grupo de herramientas adicionales a los lenguajes de programacion o de marcado, 
+que nos ayudan a lograr tareas de manera mas sencilla o rapida.
+
+Preprocesador = Es un programa que nos ayuda a crear estilos CSS de manera mas rapida, a traves de una
+sintaxis unica, parecia a lo que estamos mas acostumbrados a ver en lenguajes de programacion.
+
+Responsive website = Es una pagina web o website que se adapta al tamano de la pantalla del
+dispositivo en el cual se esta mostrando la pagina web.

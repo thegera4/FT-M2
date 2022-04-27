@@ -1,0 +1,94 @@
+// Importar los archivos less acá:
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'global';
+@import 'navigation';
+@import 'footer';
+@import 'home-page';
+@import 'register';
+
+@media screen and (max-width: @phone){
+    .home {
+        .options {
+            display: none;
+        }
+        .hamburger {
+            display: block;
+        }
+        .dropdown {
+            width: 150px;
+            border-top: 2px solid rgb(130, 131, 128);
+            padding: 20px;
+            position: absolute;
+            top: 35px;
+            right: 65%;
+            left: 35%;
+            background-color: rgb(235, 230, 230);
+            box-shadow: 0 2px 5px #ccc;
+            display: none;
+            z-index: 100000;
+            a {
+                font-size: 14px;
+                text-decoration: none;
+                display: block;
+                border-bottom: 1px solid #ccc;
+                padding: 4px;
+                cursor: pointer;
+                &:last-of-type {
+                    border: 0;
+                }
+            }
+          }
+        .intro {
+            img{
+            width: 100%;
+            margin-top: 30px;
+            padding: 10px;
+            border-radius: 20px;
+            }
+        }
+        .music-images {
+            display: block;
+            width: 100%;
+            img {
+                width: 100%;
+                margin: 0;
+                padding: 10px;
+                border-radius: 20px;
+                height: 100%;
+            }
+            .tecnologia{
+                display: none
+            }
+            .ondas{
+                display: none
+            }
+        }
+        .actual {
+            display: flex;
+            margin-top: 40px;
+            border-top: 1px solid @main-border-color;
+            padding: 10px;
+            flex-direction: column;
+            .actual-text {
+                width: 100%;
+                order: 2;
+            }
+            .actual-img {
+                width: 100%;
+                order: 1;
+                margin: 0;
+                padding: 1px;
+                img {
+                  width: 100%;
+                  border-radius: 10px;
+                }
+                
+            }
+
+        }
+        
+    }
+
+}

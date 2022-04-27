@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Música 8D</title>
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+ <!-- Código del nav acá -->
+  <div class="container home">
+      <div class="top-title">
+        <h2>Musica 8D</h2>
+      </div><br><br><br>
+
+      <nav>
+        <div class="options"><a href="/index.html">Inicio</a></div>
+        <div class="options">Sobre Nosotros</div>
+        <div class="options">Blog</div>
+        <div class="options">Contacto</div>
+        <div class="options">Registrarse</div>
+         <!-- EXTRA CREDIT: Hamburger Menu -->
+        <button type="button" class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+         <!-- EXTRA CREDIT: Dropdown menu -->
+        <div class="dropdown">
+          <a>Inicio</a>
+          <a>Sobre Nosotros</a>
+          <a>Blog</a>
+          <a>Contacto</a>
+          <a>Registrarse</a>
+        </div>
+      </nav>
+    
+    <header class="registro">
+      <h2>Registrate con nosotros!</h2>
+      <p>No te pierdas de las ultimas noticias en el mundo de la musica, te mantendremos actualizado!</p>
+    </header>
+    <div class="form-container">
+        <form>
+            <input class="input" id="user" type="text" name="user" required="true" placeholder="Usuario"></input><br>
+            <input class="input" id="pass" type="password" name="pass" required="true" placeholder="Constrasena"></input><br>
+            <input class="input" id="email" type="email" name="email" required="true" placeholder="Email"></input><br>
+            <button id="btn-enviar" type="submit" value="Enviar">Enviar</button>
+        </form>
+    </div>  
+   
+
+    <footer id="footer-register">
+      <p>Henry</p>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

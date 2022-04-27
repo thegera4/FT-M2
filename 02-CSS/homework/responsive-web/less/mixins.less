@@ -1,0 +1,25 @@
+// Mixins acá
+@color: white;
+@bckgColor: rgb(36, 36, 36);
+
+.btn-normal(@color; @bckgColor){
+    background-color: @bckgColor;
+    color: @color;
+}
+.btn-hover{
+    background-color: rgb(68, 68, 68);
+    color: @bckgColor;
+}
+.btn{
+    .btn-normal(@color, @bckgColor);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    display:inline-block;
+    
+}
+.btn:hover{
+    .btn-hover();
+}
