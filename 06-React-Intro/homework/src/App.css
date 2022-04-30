@@ -1,38 +1,98 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 1px solid rgb(197, 197, 197);
+  width: 400px;
+  box-shadow: 1px 1px 2px rgb(214, 213, 213);
+  margin: 0 auto;
+}
+.close-card-btn{
+  border: none;
+  background-color: red;
   color: white;
+  font-weight: bold;
+  width: 24px;
+  position: absolute;
+  margin-left: 370px;
+  margin-top: 4px
+
+}
+.card-info-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.min-temp-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+
+}
+.max-temp-container{
+  display: flex;
+  flex-direction: column;
+
+}
+.weather-icon-container{
+  display: flex;
+  flex-direction: column;
+
+}
+.card-list{
+  display: flex;
+}
+.search-bar{
+  display: flex;
+  width: 400px;
+  margin: 0 auto;
+}
+.search-input{
+    width: 100%;
+    border: 2px solid #0d324d;
+    border-right: none;
+    padding: 5px;
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #6d6c6c;
+}
+.search-input:focus{
+  color: #0d324d;
+}
+.search-btn{
+  width: 150px;
+	height: 50px;
+	cursor: pointer;
+	border: none;
+  color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #b061bb;
+	background-image: linear-gradient(315deg, #b061bb 0%, #0d324d 74%);
+	background-size: 200% 100%;
+	background-position: left;
+	background-repeat: no-repeat;
+	transition: 500ms;
 }
 
-.App-link {
-  color: #61dafb;
+
+.search-btn:hover {
+	background-position: right center;
+}
+@media (max-width: 1240px) {
+  .card-list {
+    flex-direction: column;
+  }
+  .card-container{
+    margin-top: 10px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
