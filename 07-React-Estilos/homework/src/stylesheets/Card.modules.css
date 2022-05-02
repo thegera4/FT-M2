@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Square+Peg&display=swap');
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 400px;
+    margin: 0 auto;
+    background: linear-gradient( to top right, rgba(63,81,181,1) 0%, rgba(3,155,229 ,1) 40%);
+    box-shadow: 3px 3px 3px 3px rgba(2,119,189 ,1);
+    border-radius: 20px;
+}
+.card-container:hover{
+    transition: .7s;
+    transform: scale(1.1);
+}
+.card-container h2{
+    color: rgb(233, 233, 233);
+    margin-top: 8px;
+    font-family: 'Square Peg', cursive;
+    font-size: 64px;
+}
+.close-card-btn{
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: 24px;
+    position: absolute;
+    margin-left: 367px;
+    margin-top: 8px;
+    border-radius: 30px;
+    outline: none;
+}
+.close-card-btn:hover{
+    outline: none;
+    border: none;
+    background-color: white;
+    color: red;
+    transform: scale(1.2);
+    box-shadow: 1px 1px rgb(3, 32, 82);
+    transition: 1s;
+}
+.close-card-btn:focus{
+    outline: none;
+    border: none;
+}
+.card-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-info-container p{
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: x-large;
+}
+.min-temp-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;  
+}
+.max-temp-container{
+    display: flex;
+    flex-direction: column;
+}
+.weather-icon-container{
+    display: flex;
+    flex-direction: column;
+}
