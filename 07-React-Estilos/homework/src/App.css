@@ -1,10 +1,6 @@
 .App {
   text-align: center;
 }
-@media (max-width: 1240px) {
-  .card-list {
-    flex-direction: column;
-    padding: 10px;
-  }
-  
+:root{
+  --closeBtnBgColor: red;
 }

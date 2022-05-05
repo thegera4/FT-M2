@@ -1,11 +1,11 @@
 import React from 'react';
 import Card from '../components/Card'
-import style from '../stylesheets/Cards.modules.css'
+import style from '../stylesheets/Cards.module.css'
 
 export default function Cards(props) {
   // acá va tu código
   // tip, podés usar un map
-  return <div className="card-list">
+  return <div className={style.cardList}>
     {
       props.cities.map(city => 
       <Card 

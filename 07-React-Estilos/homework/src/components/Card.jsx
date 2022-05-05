@@ -1,21 +1,21 @@
 import React from 'react';
-import style from '../stylesheets/Card.modules.css'
+import style from '../stylesheets/Card.module.css'
 
 export default function Card(props) {
   // acá va tu código
-  return <div className="card-container">
+  return <div className={style.cardContainer}>
   <h2>{props.name}</h2>
-  <button className="close-card-btn" onClick={props.onClose}>X</button>
-  <div className="card-info-container">
-    <div className="min-temp-container">
+  <button className={style.closeCardBtn} onClick={props.onClose}>X</button>
+  <div className={style.cardInfoContainer}>
+    <div className={style.minTempContainer}>
       <p><strong>Min</strong></p>
       <p>{props.min}</p>
     </div>
-    <div className="max-temp-container">
+    <div className={style.maxTempContainer}>
       <p><strong>Max</strong></p>
       <p>{props.max}</p>
     </div>
-    <div className="weather-icon-container">
+    <div className={style.weatherIconContainer}>
       <img 
       src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} 
       alt={`Weather icon of ${props.name}`}/>

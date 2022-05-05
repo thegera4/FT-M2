@@ -1,32 +1,32 @@
-.search-bar{
-    display: flex;
-    width: 400px;
-    margin: 0 auto;
+.searchBar{
+  display: flex;
+  width: 400px;
+  margin: 0 auto;
 }
-.search-input{
-    width: 100%;
-    border: 2px solid #0d324d;
-    padding: 5px;
-    height: 50px;
-    border-right: none;
-    border-radius: 20px;
-    outline: none;
-    color: #6d6c6c;
+.searchInput{
+  width: 100%;
+  border: 2px solid #0d324d;
+  padding: 5px;
+  height: 50px;
+  border-right: none;
+  border-radius: 20px;
+  outline: none;
+  color: #6d6c6c;
 }
-.search-input:focus{
-    color: #0d324d;
-    box-shadow: 3px 3px 3px 3px rgb(122, 128, 132);
+.searchInput:focus{
+  color: #0d324d;
+  box-shadow: 3px 3px 3px 3px rgb(122, 128, 132);
 }
-.search-btn {
-    width: 100px;
-    height: 50px;
-    cursor: pointer;
-    border: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: -50px;
+.searchBtn {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -50px;
   font-size: 20px;
   color: #ffffff;
   cursor: pointer;
@@ -34,12 +34,12 @@
   border: 0px solid #000;   
   }
 /* Initiate color change for pulse-on-hover */
-.search-btn {
+.searchBtn {
   animation: colorShift 10000ms infinite ease-in;
 }
 /* Continue animation and add shine on hover */
-.search-btn:hover,
-.search-btn:focus {
+.searchBtn:hover,
+.searchBtn:focus {
   animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in, hoverShine 200ms;
   outline: none;
   border: none;
@@ -51,10 +51,10 @@
       background: #0045e6;
   }
   33% {
-    background: #4489d9;
+    background: #0a3c1d;
   }
   66%{
-    background: #91c5e0;
+    background: #811771;
   }
 }
 
