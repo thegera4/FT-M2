@@ -1,20 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Square+Peg&display=swap');
+
 .card {
   margin: 20px;
   width: 18rem;
+  border: none;
+  width: 350px;
+  background: linear-gradient( to top right, rgba(63,81,181,1) 0%, rgba(3,155,229 ,1) 40%);
+  box-shadow: 3px 3px 3px 3px rgb(194, 199, 202);
+  border-radius: 20px;
+  transition: .4s;
+  perspective: 1000px;
+}
+.card:hover{
+  transform: scale(1.1) ;
 }
 
-.card-title {
-  margin-bottom: 15px;
+.card h5{
+  color: white;
+  font-family: 'Square Peg', cursive;
+  font-size: 52px;
 }
-
 #closeIcon {
   display: flex;
   justify-content: flex-end;
   margin-right: 8px;
   margin-top: 8px;
 }
-
 .card-body {
   margin-top: 0px !important;
   padding-top: 0px !important;
 }
+.closeCardBtn{
+  border: none;
+  background-color: var(--closeBtnBgColor);
+  color: white;
+  font-weight: bold;
+  width: 24px;
+  position: absolute;
+  margin-left: 367px;
+  margin-top: 8px;
+  border-radius: 30px;
+  outline: none;
+  transition: .5s;
+  font-size: 1rem;
+}
+.closeCardBtn:hover{
+  outline: none;
+  border: none;
+  background-color: white;
+  color: var(--closeBtnBgColor);
+  transform: scale(1.2);
+  box-shadow: 1px 1px rgb(3, 32, 82);
+}
+.closeCardBtn:focus{
+  outline: none;
+  border: none;
+}
+.row{
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: x-large;
+}
+

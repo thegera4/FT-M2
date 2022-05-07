@@ -1,3 +1,16 @@
 #logoHenry {
-  margin-right: 20px;
+  margin-right: 1.1rem;
+}
+.logo-container{
+  display: flex;
+  border-radius: 9999px;
+  background-color: white;
+  padding: 1rem;
+}
+.app-title{
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-left: .5rem;
+  margin-top: .8rem;
 }

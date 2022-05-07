@@ -1,0 +1,28 @@
+.searchBar{
+    display: flex;
+    min-width: 40%;
+    margin: 0 auto;
+}
+.search-btn{
+    outline: none;
+    min-width: 70px;
+}
+.search-btn:hover span{
+    display: none;
+}
+.search-btn:hover:before{
+    content:"+";
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+.search-btn:click:before{
+    outline: none;
+    border: none;
+}
+.form-control:focus{
+    color: #0d324d;
+  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
+}
