@@ -7,9 +7,8 @@
   width: 350px;
   background: linear-gradient( to top right, rgba(63,81,181,1) 0%, rgba(3,155,229 ,1) 40%);
   box-shadow: 3px 3px 3px 3px rgb(194, 199, 202);
-  border-radius: 20px;
+  border-radius: 20px;  
   transition: .4s;
-  perspective: 1000px;
 }
 .card:hover{
   transform: scale(1.1) ;
