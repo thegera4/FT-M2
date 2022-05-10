@@ -29,3 +29,8 @@ nav{
 .about-link{
   color: white;
 }
+@media (max-width: 700px){
+  .app-title{
+   margin-left: 0;
+  }  
+}

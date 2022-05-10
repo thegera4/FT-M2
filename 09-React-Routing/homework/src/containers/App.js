@@ -6,7 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import About from '../components/About';
 import Ciudad from '../components/Ciudad';
 
-const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
+//const apiKey = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -15,7 +15,7 @@ function App() {
   }
   function onSearch(ciudad) {
     //Llamado a la API del clima
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${process.env.REACT_APP_API_KEY}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
         if(recurso.main !== undefined){
@@ -34,7 +34,7 @@ function App() {
           };
           setCities(oldCities => [...oldCities, ciudad]);
         } else {
-          alert("Ciudad no encontrada");
+          alert("City not found");
         }
       });
   }

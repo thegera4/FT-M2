@@ -26,3 +26,14 @@
     color: #0d324d;
   box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
 }
+@media (max-width: 950px){
+    .searchBar{
+        margin-right: 3rem;
+    }
+}
+@media (max-width: 700px){
+    .searchBar{
+        position: relative;
+        margin-top: 3.5rem;
+    }  
+}

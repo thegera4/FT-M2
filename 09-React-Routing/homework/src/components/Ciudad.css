@@ -9,3 +9,12 @@
     font-family: 'Square Peg', cursive;
     font-size: 6rem;
 }
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-top: 2rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2rem;
+    color: #05366a;
+}

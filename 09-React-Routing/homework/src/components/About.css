@@ -3,7 +3,19 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 40vh;
-    margin-bottom: 50vh;
+    margin-top: 30vh;
+
     margin-left: auto;
+}
+.pic-container{
+    display: flex;
+    width:150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.pic-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
 }
