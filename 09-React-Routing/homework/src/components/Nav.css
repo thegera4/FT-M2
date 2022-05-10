@@ -1,3 +1,31 @@
+nav{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 #logoHenry {
-  margin-right: 20px;
+  margin-right: 1rem;
+}
+.logo-container{
+  display: flex;
+  border-radius: 9999px;
+  background-color: white;
+  padding: 0.5rem;
+  width: 55px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.app-title{
+  position: absolute;
+  top: .5rem;
+  left: 4.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-left: .5rem;
+  margin-top: .8rem;
+}
+.about-link{
+  color: white;
 }

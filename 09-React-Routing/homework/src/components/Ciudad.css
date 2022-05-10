@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Square+Peg&display=swap');
+
+.main-container{
+    color: #007bff;
+}
+.main-container h2{
+    margin-top: 5rem;
+    font-weight: bold;
+    font-family: 'Square Peg', cursive;
+    font-size: 6rem;
+}
