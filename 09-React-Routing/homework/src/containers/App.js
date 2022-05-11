@@ -2,19 +2,18 @@ import React, { useState } from 'react';
 import './App.css';
 import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom'; // react-router-dom@5.3.0
 import About from '../components/About';
 import Ciudad from '../components/Ciudad';
 
-//const apiKey = process.env.REACT_APP_API_KEY;
-
 function App() {
   const [cities, setCities] = useState([]);
+
   function onClose(id) {
     setCities(oldCities => oldCities.filter(c => c.id !== id));
   }
+
   function onSearch(ciudad) {
-    //Llamado a la API del clima
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${process.env.REACT_APP_API_KEY}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
@@ -49,7 +48,6 @@ function App() {
     // }
   }
   return (
-    
       <div className="App">
         <Nav onSearch={onSearch}/>
           <Switch>

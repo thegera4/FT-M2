@@ -1,14 +1,23 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import './SearchBar.css';
 
 export default function SearchBar({onSearch}) {
   const [city, setCity] = useState("");
+  
+  const history = useHistory();
+
+  function goHome() {
+    history.push("/");
+  }
+
   return (
     <form className="searchBar" onSubmit={(e) => {
       e.preventDefault();
       onSearch(city);
       setCity("");
       document.querySelector(".form-control").value = "";
+      goHome();
     }}>
       <input
         type="text"
