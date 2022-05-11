@@ -20,7 +20,6 @@ function Nav({onSearch}) {
       <Link to='/about'>
         <span className="about-link">About</span>
       </Link>
-
     </nav>
   );
 };

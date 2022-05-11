@@ -7,6 +7,7 @@ export default function SearchBar({onSearch}) {
     <form className="searchBar" onSubmit={(e) => {
       e.preventDefault();
       onSearch(city);
+      setCity("");
       document.querySelector(".form-control").value = "";
     }}>
       <input

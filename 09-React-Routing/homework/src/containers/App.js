@@ -52,36 +52,36 @@ function App() {
     
       <div className="App">
         <Nav onSearch={onSearch}/>
-        <Switch>
-          <Route exact path="/">
-          <div>
-            <Cards
-              cities={cities}
-              onClose={onClose}
-            />
-          </div>
-          </Route>
-          {/*legacy de Home*/}
-           {/* <Route 
-            exact path="/" 
-            render={() => <Cards cities={cities} onClose={onClose} />}
-          /> */} 
-          <Route path="/about">
-            <About />
-          </Route>
-          {/*legacy de About*/}
-          {/* <Route 
-            path="/about" 
-            component={About}
-          /> */} 
-          <Route 
-          path="/ciudad/:id"
-          render={({match}) => <Ciudad city={onFilter(match.params.id)} />}>
-          </Route>
-          {/* <Route path="/ciudad/:id">
-            <Ciudad />
-          </Route> */}
-        </Switch>
+          <Switch>
+            <Route exact path="/">
+            <div>
+              <Cards
+                cities={cities}
+                onClose={onClose}
+              />
+            </div>
+            </Route>
+            {/*legacy de Home*/}
+            {/* <Route 
+              exact path="/" 
+              render={() => <Cards cities={cities} onClose={onClose} />}
+            /> */} 
+            <Route path="/about">
+              <About />
+            </Route>
+            {/*legacy de About*/}
+            {/* <Route 
+              path="/about" 
+              component={About}
+            /> */} 
+            <Route 
+            path="/ciudad/:id"
+            render={({match}) => <Ciudad city={onFilter(match.params.id)} />}>
+            </Route>
+            {/* <Route path="/ciudad/:id">
+              <Ciudad />
+            </Route> */}
+          </Switch>
       </div>
     
   );

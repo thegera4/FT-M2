@@ -3,9 +3,6 @@ import './Ciudad.css';
 import { FaTemperatureHigh,FaWind } from 'react-icons/fa';
 import { BsClouds } from 'react-icons/bs';
 import { TiLocationOutline, TiLocation, TiWeatherPartlySunny } from 'react-icons/ti';
-
-
-
 //import { useParams } from 'react-router-dom'
 
 export default function Ciudad({city}) {
@@ -13,7 +10,7 @@ export default function Ciudad({city}) {
     //const { id } = useParams();
     //useEffect --> fetch('..../id') -- Estado
 
-    if(!city) return <h2>City not found</h2>
+  if(!city) return <h2>City not found</h2>
   return (
     <div className="main-container">
         <h2>{`Weather details of ${city.name}`}</h2>
