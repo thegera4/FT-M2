@@ -1,5 +1,5 @@
 const { createStore } = require('redux');
-const reducer= require('./reducer');
+const reducer = require('./reducer');
 const { incremento, decremento, incimpar, incasync } = require('./actions');
 
 // En esta linea creamos nuestro store. Pasandole como parametro nuestro Reducer
@@ -16,7 +16,7 @@ function renderContador() {
   let actualValue = store.getState().contador;
   // Seteamos el numero obtenido como texto dentro del elemento con id 'valor':
   valor.innerHTML = actualValue;
-
+  console.log(incimpar())
 }
 
 // Ejecutamos la funcion 'renderContador':

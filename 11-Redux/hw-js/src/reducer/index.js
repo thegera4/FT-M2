@@ -19,8 +19,14 @@ function contador(state = initialState, action) {
         contador: state.contador - 1
       }
     case INCIMPAR:
-      return {
-        contador: state.contador + 3
+      if(state.contador % 2 !== 0) {
+        return {
+          contador: state.contador + 1
+        }
+      } else{
+        return {
+          contador: state.contador
+        }
       }
       case INCASYNC:
       return {
