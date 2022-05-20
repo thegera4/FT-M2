@@ -1,7 +1,7 @@
-const { INCREMENTO, DECREMENTO, INCIMPAR, INCASYNC } = require('../action-types');
+const { INCREMENTO, DECREMENTO, INCIMPAR } = require('../action-types');
 
 const initialState = {
-  contador: 0
+  contador: 0,
 }
 
 // Nuestro reducer que maneja nuestros dos casos de acción incremento y decremento.
@@ -27,10 +27,6 @@ function contador(state = initialState, action) {
         return {
           contador: state.contador
         }
-      }
-      case INCASYNC:
-      return {
-        contador: state.contador + 1
       }
     default:
       return state

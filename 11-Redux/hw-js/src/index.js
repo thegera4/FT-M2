@@ -1,9 +1,10 @@
-const { createStore } = require('redux');
+const { createStore, applyMiddleware } = require('redux');
 const reducer = require('./reducer');
+const thunk = require('redux-thunk').default;
 const { incremento, decremento, incimpar, incasync } = require('./actions');
 
 // En esta linea creamos nuestro store. Pasandole como parametro nuestro Reducer
-var store = createStore(reducer);
+var store = createStore(reducer, applyMiddleware(thunk));
 
 // Obtenemos el elemento con el id `valor`.
 var valor = document.querySelector('#valor');
@@ -37,8 +38,4 @@ let btnAsync = document.querySelector('#incrementoAsync');
 btnAdd.onclick = () => store.dispatch(incremento());
 btnSub.onclick = () => store.dispatch(decremento());  
 btnImp.onclick = () => store.dispatch(incimpar());
-btnAsync.onclick = () => {
-  setTimeout(() => {
-    store.dispatch(incasync());
-  }, 1000);
-}
+btnAsync.onclick = () => store.dispatch(incasync());
