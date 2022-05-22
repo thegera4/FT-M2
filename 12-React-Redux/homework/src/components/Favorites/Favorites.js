@@ -9,7 +9,7 @@ export class ConnectedList extends Component {
   render() {
     return (
       <div>
-        <h2>Películas Favoritas</h2>
+        <h2>Favorite Movies:</h2>
         <ul>
           {/* Aqui deberias poner tu lista de peliculas! */}
           {this.props.favorites.map(movie => {
@@ -22,7 +22,7 @@ export class ConnectedList extends Component {
                   onClick={() => this.props.removeMovieFavorite(movie)}
                   className="btn-remove"
                 >
-                  Delete
+                  X
                 </button>
               </li>
             );

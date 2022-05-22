@@ -5,7 +5,7 @@ import './Movie.css';
 
 class Movie extends React.Component {
 
-    componentDidMount(movieID){
+    componentDidMount(){
     // usando destructuring
     //const { match: { params: { id }}} = this.props;
     // manera convencional
@@ -26,7 +26,7 @@ class Movie extends React.Component {
                   <h3 className='subtitle'>{this.props.movieDetail.Year}</h3>
                   <p className='description'>{this.props.movieDetail.Plot}</p>
                   <div className="container2">
-                    <img id="img" src={this.props.movieDetail.Poster} alt="Poster" />
+                    <img id="img" src={this.props.movieDetail.Poster} alt="No poster available in the API" />
                     <ul className='column description'>
                       <li>Genre: {this.props.movieDetail.Genre}</li>
                       <li>Director: {this.props.movieDetail.Director}</li>

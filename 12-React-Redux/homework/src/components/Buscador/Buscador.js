@@ -19,16 +19,17 @@ export class Buscador extends Component {
   handleSubmit(event) {
     event.preventDefault();
     this.props.getMovies(this.state.title);
+    this.setState({ title: "" });
   }
 
   render() {
     const { title } = this.state;
     return (
       <div>
-        <h2>Buscador</h2>
+        <h2>Search Bar</h2>
         <form className="form-container" onSubmit={(e) => this.handleSubmit(e)}>
           <div>
-            <label className="label" htmlFor="title">Película: </label>
+            <label className="label" htmlFor="title">Movie: </label>
             <input
               type="text"
               id="title"
@@ -37,8 +38,9 @@ export class Buscador extends Component {
               onChange={(e) => this.handleChange(e)}
             />
           </div>
-          <button type="submit">BUSCAR</button>
+          <button type="submit">Search</button>
         </form>
+        {this.props.movies ? (
         <ul>
          {/* Aqui tienes que escribir tu codigo para mostrar la lista de peliculas */}
           {this.props.movies.map(movie => {
@@ -51,12 +53,18 @@ export class Buscador extends Component {
                   onClick={() => this.props.addMovieFavorite(movie)}
                   className="btn-fav"
                 >
-                  Favorito
+                  Favorite
                 </button>
               </li>
             );
-          })}
+          })
+         }
         </ul>
+        ) : (
+          <p>No movies found, please try to write the full and correct name of the movie</p>
+        )
+        }
+
       </div>
     );
   }
