@@ -15,10 +15,14 @@ export default function NavBar() {
             <nav>
                 <ul className="list">
                     <li className="list-item">
-                        
+                    <NavLink exact to="/">
+                        Home
+                    </NavLink>
                     </li>
                     <li className="list-item">
-                    
+                    <NavLink to="/filter/posts">
+                        Posts
+                    </NavLink>
                     </li>
                 </ul>
           </nav>
